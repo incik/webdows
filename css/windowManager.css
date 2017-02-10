@@ -1,0 +1,82 @@
+body {
+	font-family: "Tahoma", sans-serif;
+	font-size: 11px;
+	margin: 0;
+}
+
+div#page {
+	width: 960px;
+	margin: 20px auto;
+}
+
+p.center {
+	text-align: center;
+}
+
+div.desktop {
+	margin: auto;
+	width: 640px;
+	height: 400px;
+	background: #3a6ea5;
+	border: 1px dotted #000;
+	margin-bottom: 20px;
+}
+
+div.window {
+	position: absolute;
+	width: 320px;
+	height: 200px;
+	background: #fff;
+	border-top: 2px solid #d4d0c8;
+	border-left: 2px solid #d4d0c8;
+	border-bottom: 2px solid #d4d0c8;
+	border-right: 2px solid #d4d0c8;
+}
+
+div.window div.titlebar {
+	background: -moz-linear-gradient(left, #0b256b, #a6caf0);
+	background: -ms-linear-gradient(left, #0b256b, #a6caf0);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#0b256b), to(#a6caf0));
+	background: -webkit-linear-gradient(left, #0b256b, #a6caf0);
+	background: -o-linear-gradient(left, #0b256b, #a6caf0);
+	background: linear-gradient(left, #0b256b, #a6caf0);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b256b', endColorstr='#a6caf0', GradientType=1); 
+
+	color: #fff;
+	padding: 3px 2px 3px 5px;
+	font-weight: bold;
+	border-bottom: 2px solid #d4d0c8;
+}
+
+div[class^="window icon-"] div.titlebar{
+}
+
+[class^="icon-"] {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url(glyphicons-halflings-white.png);
+	vertical-align: text-top;
+	background-position: 14px 14px;
+	background-repeat: no-repeat;
+	margin-right: .3em;
+}
+
+.icon-login {
+  background-position: -168px 0;
+}
+
+.icon-form {
+  background-position: -264px -24px;
+}
+
+div.window-resizer {
+	width: 16px;
+	height: 16px;
+	background: url('resizer.gif') no-repeat -6px -6px;
+}
+
+div.window p {
+	margin: 10px;
+}
